@@ -1,5 +1,5 @@
 {
-  "name": "algolia-chat-me",
+  "name": "chat-me-sdk",
   "version": "0.1.0",
   "private": true,
   "scripts": {

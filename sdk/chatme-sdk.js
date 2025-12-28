@@ -17,7 +17,7 @@ class ChatMe {
     this.botPersona = { name, tone, description };
   }
 
-  init(config) {
+  initChat(config) {
     if (typeof config === "string") {
       throw new Error("init now requires a config object: { token, userId }");
     }

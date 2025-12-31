@@ -2,22 +2,22 @@
 // This is a minimal stub for documentation and demo purposes.
 
 class ChatMe {
-  constructor({ token, userId }) {
+  constructor({ token, userId, userEmail }) {
     this.token = token;
-    this.userId = userId || null;
+    this.userId = userId;
+    this.userEmail = userEmail || null;
     this.historyEnabled = true;
     this.botPersona = {
       name: "ChatMeBot",
       tone: "neutral",
-      description: "AI BOT",
     };
   }
 
-  setBotPersonel(name, tone = "neutral", description) {
-    this.botPersona = { name, tone, description };
+  setBotPersona(name, tone = "neutral") {
+    this.botPersona = { name, tone };
   }
 
-  initChat(config) {
+  init(config) {
     if (typeof config === "string") {
       throw new Error("init now requires a config object: { token, userId }");
     }

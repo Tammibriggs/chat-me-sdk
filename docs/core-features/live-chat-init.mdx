@@ -17,7 +17,7 @@ sdk.init({
   token: 'YOUR_API_TOKEN',
   userId: 'USER_ID', // Optional
   userEmail: 'USER_EMAIL', // Optional
-}); 
+});
 ```
 
 - `token`: Required API token
@@ -25,11 +25,9 @@ sdk.init({
 - `userEmail`: Optional user email for identification and tracking
 
 ### Example Use Case
-
 - Start a chat for a logged-in user with their ID
 
 ### Edge Cases
-
 - If `userId` is missing, chat will still start but user tracking is disabled
 - Passing a string instead of an object will throw an error
 

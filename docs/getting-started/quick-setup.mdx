@@ -13,12 +13,14 @@ Initialize the ChatMe SDK in your app to start using its features.
 ```js
 const sdk = new ChatMe({
   token: 'YOUR_API_TOKEN',
-  userId: 'USER_ID', // Optional, for user tracking
+  userId: 'USER_ID', // Unique user identifier (required)
+  userEmail: 'user@example.com', // Optional, for user identification
 });
 ```
 
 - `token`: Your API token (required)
-- `userId`: Unique user identifier (optional)
+- `userId`: Unique user identifier (required)
+- `userEmail`: User's email address (optional)
 
 ## Example Use Case
 

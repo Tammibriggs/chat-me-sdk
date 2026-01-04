@@ -15,12 +15,14 @@ Now, you must pass a config object:
 ```js
 sdk.initChat({
   token: 'YOUR_API_TOKEN',
-  userId: 'USER_ID', // Optional
+  userId: 'USER_ID',
+  userEmail: 'USER_EMAIL@example.com', // Optional
 });
 ```
 
 - `token`: Required API token
-- `userId`: Optional user identifier for tracking
+- `userId`: Required user identifier for tracking
+- `userEmail`: Optional user email for extended identification
 
 ### Example Use Case
 - Start a chat for a logged-in user with their ID

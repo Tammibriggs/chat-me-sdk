@@ -15,18 +15,20 @@ Now, you must pass a config object:
 ```js
 sdk.initChat({
   token: 'YOUR_API_TOKEN',
-  userId: 'USER_ID', // Optional
+  userId: 'USER_ID', // Required
+  userEmail: 'USER_EMAIL', // Optional
 });
 ```
 
 - `token`: Required API token
-- `userId`: Optional user identifier for tracking
+- `userId`: Required user identifier for tracking
+- `userEmail`: Optional user email for enhanced tracking
 
 ### Example Use Case
 - Start a chat for a logged-in user with their ID
 
 ### Edge Cases
-- If `userId` is missing, chat will still start but user tracking is disabled
+- `userId` is now required when initializing the `ChatMe` SDK instance. If not provided during SDK instantiation, an error will occur.
 - Passing a string instead of an object will throw an error
 
 ---
